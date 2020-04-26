@@ -45,17 +45,12 @@ body {
 
 section.container {
 	width: 1400px;
-/* 	height: 100vh; */
+	/*height: 100vh;*/
 	margin: 0 auto;
-/* 	overflow: hidden; */
+	/*overflow: hidden;*/
 }
 
-/*div.left-col {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}
-*/
+
 nav {
 	display: flex;
 
@@ -99,6 +94,7 @@ div.search input::placeholder {
 
 div.wrapper {
 	margin-top: 132px;
+	margin-bottom: 35px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
