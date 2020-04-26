@@ -42,6 +42,15 @@ body {
 	color: #fff;
 }
 
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:active {
+	color: var(--color-5);
+}
+
 
 section.container {
 	width: 1400px;
