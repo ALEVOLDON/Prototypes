@@ -8,16 +8,6 @@
 	--bg-color: #C4C4C4;
 }
 
-/*
-#div1 {
-  background-color: var(--main-bg-color);
-}
-
-#div2 {
-  background-color: var(--main-bg-color);
-}
-*/
-
 html {
 	box-sizing: border-box;
 }
@@ -56,11 +46,10 @@ a:active {
 }
 
 
-section.container {
+div.container {
+	display: flex;
 	width: 1400px;
-	/*height: 100vh;*/
 	margin: 0 auto;
-	/*overflow: hidden;*/
 }
 
 
@@ -69,16 +58,19 @@ nav {
 
 }
 
+.bg-color {
+	background: var(--bg-color);
+}
+
 div.logo {
 	display: flex;
 	width: 120px;
 	height: 120px;
-	background: var(--bg-color);
 	border-radius: 50%;
 	margin: 27px 0 0 54px;
 }
 
-div.logo span {
+div.logo a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -87,17 +79,27 @@ div.logo span {
 }
 
 div.search {
+	position: relative;
 	margin-left: 67px;
 	margin-top: 63px;
+}
+
+div.search::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: var(--color-5);
+	left: 15px;
+	top: 23px;
 }
 
 div.search input {
 	min-width: 716px;
 	min-height: 64px;
-	background: var(--bg-color);
 	border-radius: 5px;
 	padding: 4px;
-	padding-left: 10px;
+	padding-left: 45px;
 	border: none;
 }
 
@@ -113,40 +115,33 @@ div.wrapper {
 	align-items: flex-end;
 }
 
-div.building-java {
+div.building-java,
+div.building-kafka,
+div.building-ui_ux_design,
+div.building-python {
 	bottom: 35px;
 	width: 232px;
 	height: 650px;
-	background: var(--bg-color);
 	border-radius: 10px;
 	margin-left: 54px;
 }
 
-div.building-kafka {
-	bottom: 35px;
-	width: 232px;
-	height: 765px;
-	background: var(--bg-color);
-	border-radius: 10px;
+div.building-kafka,
+div.building-ui_ux_design,
+div.building-python {
 	margin-left: 10px;
+}
+
+div.building-kafka {
+	height: 765px;
 }
 
 div.building-ui_ux_design {
-	bottom: 35px;
-	width: 232px;
 	height: 700px;
-	background: var(--bg-color);
-	border-radius: 10px;
-	margin-left: 10px;
 }
 
-div.building-python{
-	bottom: 35px;
-	width: 232px;
+div.building-python {
 	height: 620px;
-	background: var(--bg-color);
-	border-radius: 10px;
-	margin-left: 10px;
 }
 
 div.title {
@@ -156,49 +151,118 @@ div.title {
 	align-items: center;
 }
 
-div.block-container {
+div.icon-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-div.building-java div.block {
+div.building-java div.icon,
+div.building-kafka div.icon,
+div.building-ui_ux_design div.icon,
+div.building-python div.icon {
 	width: 50px;
-	height: 50px;
+	height: 51px;
 	background: var(--bg-color);
 	border: 2px solid #FFFFFF;
 	margin: 9px 7px;
 }
 
-div.building-kafka div.block {
-	width: 50px;
+div.building-kafka div.icon {
 	height: 65px;
-	background: var(--bg-color);
-	border: 2px solid #FFFFFF;
-	margin: 9px 7px;
 }
 
-div.building-ui_ux_design div.block {
-	width: 50px;
+div.building-ui_ux_design div.icon {
 	height: 57px;
-	background: var(--bg-color);
-	border: 2px solid #FFFFFF;
-	margin: 9px 7px;
 }
 
-div.building-python div.block {
-	width: 50px;
+div.building-python div.icon {
 	height: 47px;
-	background: var(--bg-color);
-	border: 2px solid #FFFFFF;
-	margin: 9px 7px;
 }
 
-div.building-java div.block:hover,
-div.building-kafka div.block:hover,
-div.building-ui_ux_design div.block:hover,
-div.building-python div.block:hover {
+div.building-java div.icon:hover,
+div.building-kafka div.icon:hover,
+div.building-ui_ux_design div.icon:hover,
+div.building-python div.icon:hover {
 	border-color: var(--color-5);
 	cursor: pointer;
 }
+
+div.right-col {
+	margin-left: 50px;
+}
+
+div.welcome {
+	position: relative;
+	width: 375px;
+	height: 206px;
+	background-image: url(../img/zeppelin.svg);
+	
+}
+
+div.welcome a {
+	position: absolute;
+	left: 90px;
+	top: 80px;
+	text-transform: uppercase;
+}
+
+div.calendar {
+	position: relative;
+	width:300px;
+	height: 415px;
+	border-radius: 5px;
+	margin-top: 30px;
+	
+}
+	
+div.calendar::before,
+div.calendar::after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 140px;
+	background: var(--bg-color);
+}
+
+div.calendar::before {
+	top: -140px;
+	left: 50px;
+}
+
+div.calendar::after {
+	top: -140px;
+	right: 50px;
+}
+
+.footer {
+	position: relative;
+	width: 300px;
+	height: 262px;
+	border-radius: 5px;
+	margin-top: 90px;
+	
+}
+
+.footer:before,
+.footer:after {
+	position: absolute;
+	content: "";
+	width: 4px;
+	height: 140px;
+	background: var(--bg-color);
+}
+
+.footer:before {
+	top: -140px;
+	left: 50px;
+}
+
+.footer:after {
+	top: -140px;
+	right: 50px;
+}
+
+
+
 
