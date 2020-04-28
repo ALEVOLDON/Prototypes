@@ -45,6 +45,10 @@ a:active {
 	color: var(--color-5);
 }
 
+ul {
+	list-style: none;
+}
+
 
 div.container {
 	display: flex;
@@ -235,33 +239,76 @@ div.calendar::after {
 	right: 50px;
 }
 
+div.calendar data {
+	position: relative;
+	display: flex;
+	justify-content:center;
+	padding-top: 16px; 
+}
+
+div.calendar data::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+    height: 20px;
+    background: var(--color-5);
+    left: 50px;
+    top: 20px;
+}
+
+div.meetup-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+ul.time li,
+ul.meetup li {
+	font-weight: normal;
+	padding-top: 16px;
+}
+	
+
 .footer {
+	display: flex;
+	text-align: center;
 	position: relative;
 	width: 300px;
 	height: 262px;
 	border-radius: 5px;
 	margin-top: 90px;
-	
+	padding-left: 20px;
 }
+
 
 .footer:before,
 .footer:after {
 	position: absolute;
 	content: "";
 	width: 4px;
-	height: 140px;
+	height: 90px;
 	background: var(--bg-color);
 }
 
 .footer:before {
-	top: -140px;
+	top: -90px;
 	left: 50px;
 }
 
 .footer:after {
-	top: -140px;
+	top: -90px;
 	right: 50px;
 }
+
+.footer li {
+	padding-top: 10px;
+}
+
+ li.copyright {
+ 	font-weight: normal;
+ 	padding-top: 90px;
+ }
+
+
 
 
 
