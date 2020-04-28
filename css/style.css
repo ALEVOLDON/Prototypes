@@ -201,7 +201,8 @@ div.welcome {
 	width: 375px;
 	height: 206px;
 	background-image: url(../img/zeppelin.svg);
-	
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 div.welcome a {
@@ -209,6 +210,28 @@ div.welcome a {
 	left: 90px;
 	top: 80px;
 	text-transform: uppercase;
+}
+
+div.welcome ul.sign_up-log_in {
+	position: absolute;
+	display: flex;
+	top: 40px;
+	left: 10px;
+}
+
+div.welcome li.circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background: transparent;
+}
+
+div.welcome li.avatar {
+	margin: 0 10px;
+	background: url(../img/cat.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 div.calendar {
@@ -225,17 +248,18 @@ div.calendar::after {
 	position: absolute;
 	content: "";
 	width: 4px;
-	height: 140px;
+	height: 100px;
+	top: -100px;
 	background: var(--bg-color);
 }
 
 div.calendar::before {
-	top: -140px;
+	
 	left: 50px;
 }
 
 div.calendar::after {
-	top: -140px;
+	
 	right: 50px;
 }
 
@@ -286,16 +310,15 @@ ul.meetup li {
 	content: "";
 	width: 4px;
 	height: 90px;
+	top: -90px;
 	background: var(--bg-color);
 }
 
 .footer:before {
-	top: -90px;
 	left: 50px;
 }
 
 .footer:after {
-	top: -90px;
 	right: 50px;
 }
 
@@ -305,7 +328,7 @@ ul.meetup li {
 
  li.copyright {
  	font-weight: normal;
- 	padding-top: 90px;
+ 	padding-top: 40px;
  }
 
 
