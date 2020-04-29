@@ -1,11 +1,15 @@
 :root {
-	--color-1: #4D5057;
-	--color-2: #4E6E5D;
-	--color-3: #4DA167;
-	--color-4: #3BC14A;
+	--color-1: #f2f2f2;
+	--color-2: #bfbfbf;
+	--color-3: #808080;
+	--color-4: #404040;
 	--color-5: #CFCFCF;
 
 	--bg-color: #C4C4C4;
+
+	--primary
+
+	--secondary
 }
 
 html {
@@ -49,6 +53,8 @@ ul {
 	list-style: none;
 }
 
+/*MAIN START */
+
 
 div.container {
 	display: flex;
@@ -57,9 +63,11 @@ div.container {
 }
 
 
-nav {
+nav.header {
 	display: flex;
-
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 
 .bg-color {
@@ -85,7 +93,7 @@ div.logo a {
 div.search {
 	position: relative;
 	margin-left: 67px;
-	margin-top: 63px;
+	margin-top: 25px;
 }
 
 div.search::before {
@@ -330,6 +338,181 @@ ul.meetup li {
  	font-weight: normal;
  	padding-top: 40px;
  }
+
+ /*MAIN END*/
+
+ /*Sign Up | Log In START*/
+
+div.main-container {
+
+} 
+
+div.calendar-link {
+	margin-top: 25px;
+	margin-left: 176px;
+} 
+
+div.calendar-link a {
+	position: relative;
+	color: lightgrey;
+
+}
+
+div.calendar-link a:hover {
+	color: var(--bg-color);
+}
+
+div.calendar-link a::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+    height: 20px;
+    background: var(--color-5);
+    left: -30px;
+    top: 4px;
+}
+
+form.welcome-with {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: lightgrey;
+}
+
+form.welcome-with h3 {
+	font-weight: normal;
+	margin-top: 93px;
+}
+
+form.welcome-with div.email input,
+form.welcome-with div.password input {
+	width: 600px;
+	height: 64px;
+	border: 2px solid var(--bg-color);
+	border-radius: 2px;
+	margin-top: 24px;
+}
+
+form.welcome-with div.email input::placeholder,
+form.welcome-with div.password input::placeholder {
+	text-align: center;
+	color: var(--bg-color);
+}
+
+form.welcome-with button.btn {
+	position: relative;
+	min-width: 231px;
+	min-height: 64px;
+	border: none;
+	background: none;
+	color: var(--bg-color);
+	font-weight: bold;
+	margin-top: 24px;
+	padding-right: 30px;
+	cursor: pointer;
+}
+
+form.welcome-with button.btn:hover {
+	color: var(--color-5);
+}
+
+form.welcome-with button.btn::after {
+	position: absolute;
+	content: "";
+	width: 20px;
+    height: 20px;
+    background: var(--color-5);
+    right: 70px;
+    top: 22px;
+}
+
+form.welcome-with p.or {
+	position: relative;
+	min-width: 600px;
+	min-height: 64px;
+	text-align: center;
+	font-weight: normal;
+	color: var(--bg-color);
+}
+
+form.welcome-with p.or::before,
+form.welcome-with p.or::after {
+	position: absolute;
+	content: "";
+	width: 200px;
+	height: 1px;
+	background: var(--bg-color);
+	top: 14px;
+}
+
+form.welcome-with p.or::before {
+	left: 0;
+}
+
+form.welcome-with p.or::after {
+	right: 0;
+}
+
+form.welcome-with div.welcome-with-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 600px;
+	min-height: 64px;
+}
+
+form.welcome-with div.welcome-with-wrapper a {
+	position: relative;
+	color: var(--bg-color);
+}
+
+form.welcome-with div.welcome-with-wrapper a:hover {
+	color: var(--color-5);
+}
+
+form.welcome-with div.welcome-with-wrapper a::before {
+	position: absolute;
+	content: "";
+	width: 20px;
+    height: 20px;
+    background: var(--color-5);
+    left: -30px;
+    top: 3px;
+
+}
+
+form.welcome-with p.service {
+	min-width: 600px;
+	min-height: 64px;
+	font-weight: normal;
+	text-align: center;
+}
+
+form.welcome-with p.service a {
+	color: var(--bg-color);
+	text-decoration: underline;
+}
+
+form.welcome-with p.service a:hover {
+	color: var(--color-5);
+}
+
+div.main-container {
+	position: relative;
+	height: 100vh;
+}
+
+div.main-container a.copyright {
+	position: absolute;
+	font-weight: normal;
+	color: var(--bg-color);
+	bottom: 10px;
+	right: 10px;
+}
+
+ /*Sign Up | Log In END*/
+
 
 
 
