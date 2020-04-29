@@ -65,7 +65,7 @@ div.container {
 
 nav.header {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	margin: 0 auto;
 }
