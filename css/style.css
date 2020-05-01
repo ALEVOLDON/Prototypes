@@ -206,6 +206,9 @@ div.right-col {
 
 div.welcome {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 375px;
 	height: 206px;
 	background-image: url(../img/zeppelin.svg);
@@ -213,10 +216,19 @@ div.welcome {
 	background-position: center;
 }
 
-div.welcome a {
+div.welcome-wrapper-visitor {
 	position: absolute;
-	left: 90px;
-	top: 80px;
+	left: 48px;
+	bottom: 93px;
+}
+
+div.welcome-wrapper-user {
+	position: absolute;
+	left: 15px;
+	bottom: 93px;
+}
+
+div.welcome a {
 	text-transform: uppercase;
 }
 
@@ -382,7 +394,7 @@ form.welcome-with {
 
 form.welcome-with h3 {
 	font-weight: normal;
-	margin-top: 93px;
+	margin-top: 20px;
 }
 
 form.welcome-with div.email input,
@@ -509,6 +521,20 @@ div.main-container a.copyright {
 	color: var(--bg-color);
 	bottom: 10px;
 	right: 10px;
+}
+
+div.checkbox-circle {
+	text-align: center;
+}
+
+
+div.checkbox-circle p.wrapper span {
+	font-weight: normal;
+}
+
+div.checkbox-circle p.wrapper span a {
+	color: var(--bg-color);
+	text-decoration: underline;
 }
 
  /*Sign Up | Log In END*/
