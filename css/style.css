@@ -7,9 +7,9 @@
 
 	--bg-color: #C4C4C4;
 
-	--primary
+	--primary: #000000;
 
-	--secondary
+	--secondary: #ffffffff;
 }
 
 html {
@@ -283,14 +283,14 @@ div.calendar::after {
 	right: 50px;
 }
 
-div.calendar data {
+div.calendar time {
 	position: relative;
 	display: flex;
 	justify-content:center;
 	padding-top: 16px; 
 }
 
-div.calendar data::before {
+div.calendar time::before {
 	position: absolute;
 	content: "";
 	width: 20px;
@@ -538,6 +538,67 @@ div.checkbox-circle p.wrapper span a {
 }
 
  /*Sign Up | Log In END*/
+
+ /*Calendar | Search START*/
+
+div.calendar-search-container {
+	width: 1400px;
+	margin: 0 auto;
+} 
+
+nav.header-calendar-search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto; 
+}
+
+nav.header-calendar-search div.logo {
+	margin: 0;
+}
+
+nav.header-calendar-search div.create-meetup a,
+nav.header-calendar-search div.archive a {
+	color: var(--bg-color);
+}
+
+nav.header-calendar-search div.create-meetup a:hover,
+nav.header-calendar-search div.archive a:hover {
+	color: var(--color-1);
+}
+
+div.create-meetup {
+	margin-left: 400px;
+}
+
+div.create-meetup,
+div.archive {
+	position: relative;
+}
+
+div.create-meetup::before,
+div.archive::before  {
+	position: absolute;
+	content: "";
+	width: 20px;
+    height: 20px;
+    background: var(--color-5);
+    left: -30px;
+    top: 3px;
+}
+
+table.table-meetup {
+	min-width: 850px;
+	color: var(--bg-color);
+	font-weight: normal;
+	margin-left: 140px;
+}
+
+table, tr {
+	border-bottom: 2px solid var(--bg-color);
+}
+
+ /*Calendar | Search END*/
 
 
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototypes</title>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+</head>
+
+<body>
+    <main id="main" class="calendar-search">
+        <div class="calendar-search-container">
+            <nav class="header-calendar-search">
+                <div class="logo bg-color">
+                    <a href="index.html">logo</a>
+                </div>
+                <div class="create-meetup">
+                    <a href="#">CREATE MEETUP</a>
+                </div>
+                <div class="archive">
+                    <a href="#">ARCHIVE</a>
+                </div>
+                <div class="welcome">
+                    <div class="welcome-wrapper-visitor">
+                        <a href="html/sign_up.html">SIGN UP</a>
+                        <span>|</span>
+                        <a href="html/log_in.html">LOG IN</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="calendar-search-wrapper">
+                <table class="table-meetup">
+                    <tr>
+                        <td>Today</td>
+                        <td rowspan="2"><a href="#design"></a>#Design</td>
+                        <td rowspan="2"><a href="#meetup-1"></a>meetup#1</td>
+                        <td rowspan="2">✰</td>
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- livereload -->
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>
