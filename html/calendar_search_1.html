@@ -16,7 +16,7 @@
         <div class="calendar-search-container">
             <nav class="header-calendar-search">
                 <div class="logo bg-color">
-                    <a href="index.html">logo</a>
+                    <a href="../index.html">logo</a>
                 </div>
                 <div class="create-meetup">
                     <a href="#">CREATE MEETUP</a>
@@ -26,26 +26,174 @@
                 </div>
                 <div class="welcome">
                     <div class="welcome-wrapper-visitor">
-                        <a href="html/sign_up.html">SIGN UP</a>
+                        <a href="../html/sign_up.html">SIGN UP</a>
                         <span>|</span>
-                        <a href="html/log_in.html">LOG IN</a>
+                        <a href="../html/log_in.html">LOG IN</a>
                     </div>
                 </div>
             </nav>
             <div class="calendar-search-wrapper">
-                <table class="table-meetup">
-                    <tr>
-                        <td>Today</td>
-                        <td rowspan="2"><a href="#design"></a>#Design</td>
-                        <td rowspan="2"><a href="#meetup-1"></a>meetup#1</td>
-                        <td rowspan="2">✰</td>
-                    </tr>
-                    <tr>
-                        <td>12:00</td>
-                    </tr>
-                </table>
+                <div class="calendar-search-wrapper-left">
+                    <table class="table-meetup">
+                        <tbody>
+                            <!-- meetup#1 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="Today">Today</time></td>
+                                <td class="cell border" rowspan="2"><a href="#design">#Design</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-1">meetup#1</a></td>
+                                <td class="last border" rowspan="2"><span>✰</span></td>
+                            </tr>
+                            <tr class="border">
+                                <td class="cell"><time datetime="12:00">12:00</time></td>
+                            </tr>
+                            <!-- meetup#2 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="Today">Today</time></td>
+                                <td class="cell border" rowspan="2"><a href="#java">#Java</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-2">meetup#2</a></td>
+                                <td class="last border" rowspan="2"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="13:15">13:15</time></td>
+                            </tr>
+                            <!-- meetup#3 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="Today">Today</time></td>
+                                <td class="cell border" rowspan="2"><a href="#c++">#C++</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-3">meetup#3</a></td>
+                                <td class="last border" rowspan="2"><span>✰</span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="14:30">14:30</time></td>
+                            </tr>
+                            <!-- meetup#4 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="Today">Today</time></td>
+                                <td class="cell border" rowspan="2"><a href="#python">#Python</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-4">meetup#4</a></td>
+                                <td class="last border" rowspan="2"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="16:45">16:45</time></td>
+                            </tr>
+                            <!-- meetup#5 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="Today">Today</time></td>
+                                <td class="cell border" rowspan="2"><a href="#python">#Python</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-5">meetup#5</a></td>
+                                <td class="last border" rowspan="2"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="18:00">18:00</time></td>
+                            </tr>
+                            <!-- meetup#6 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="Today">Today</time></td>
+                                <td class="cell border" rowspan="2"><a href="#c++">#C++</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-6">meetup#6</a></td>
+                                <td class="last border" rowspan="2"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="18:45">18:45</time></td>
+                            </tr>
+                            <!-- meetup#7 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="2020-01-23">Jan 23</time></td>
+                                <td class="cell border" rowspan="2"><a href="#java">#Java</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-7">meetup#7</a></td>
+                                <td class="last border" rowspan="2"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="19:30">19:30</time></td>
+                            </tr>
+                            <!-- meetup#8 -->
+                            <tr>
+                                <td class="cell pb-10"><time datetime="2020-01-23">Jan 23</time></td>
+                                <td class="cell border" rowspan="2"><a href="#design">#Design</a></td>
+                                <td class="cell border" rowspan="2"><a href="#meetup-8">meetup#8</a></td>
+                                <td class="last border" rowspan="2"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="cell border"><time datetime="20:00">20:00</time></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="calendar-search-wrapper-right">
+                    <div class="search-hashtag">
+                        <form>
+                            <label for="search"></label>
+                            <input class="bg-color" type="search" id="search" name="search" placeholder="#HASHTAG">
+                        </form>
+                    </div>
+                    <div class="data-toggle">
+                        <span><time datetime="DATA"></time>DATA</span>
+                    </div>
+                    <div class="table-calendar-cell">
+                        <table>
+                            <tbody>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="audience">
+                        <span>AUDIENCE</span>
+                        <label>
+                            <input type="radio" name="radio" value="Junior"> Junior
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" value="Middle"> Middle
+                        </label>
+                        <label>
+                            <input type="radio" name="radio" value="Senior"> Senior
+                        </label>
+                    </div>
+                </div>
             </div>
-        </div>
     </main>
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
