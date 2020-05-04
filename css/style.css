@@ -643,7 +643,6 @@ div.calendar-search-wrapper {
 div.calendar-search-wrapper-left {
 	margin-top: 250px;
 	min-height: 800px;
-	overflow: hidden;
 }
 
 table.table-meetup {
