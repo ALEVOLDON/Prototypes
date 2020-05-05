@@ -226,10 +226,11 @@ div.building-python div.icon:hover {
 }
 
 div.right-col {
+	margin-top: 24px;
     margin-left: 50px;
 }
 
-div.welcome {
+/*div.welcome {
     position: relative;
     display: flex;
     justify-content: center;
@@ -239,52 +240,88 @@ div.welcome {
     background-image: url(../img/zeppelin.svg);
     background-repeat: no-repeat;
     background-position: center;
+}*/
+
+div.welcome {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 120px;
+	background: var(--bg-color);
+	border-radius: 50%;
+	/*margin: 40px 100px;*/
 }
 
-div.welcome-wrapper-visitor {
+div.welcome::before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/zpln_blade_top.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+	top: -25px;
+	right: -65px;
+}
+
+div.welcome::after {
+	position: absolute;
+	content: "";
+	background-image: url(../img/zpln_blade_bottom.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+	bottom: -40px;
+	right: -47px;
+}
+
+/*div.welcome-wrapper-visitor {
     position: absolute;
     left: 48px;
     bottom: 93px;
-}
+}*/
 
-div.welcome-wrapper-user {
+/*div.welcome-wrapper-user {
     position: absolute;
     left: 15px;
     bottom: 93px;
-}
+}*/
 
 div.welcome a {
     text-transform: uppercase;
 }
 
-div.welcome ul.sign_up-log_in {
+/*div.welcome ul.sign_up-log_in {
     position: absolute;
     display: flex;
     top: 40px;
     left: 10px;
-}
+}*/
 
-div.welcome li.circle {
+/*div.welcome li.circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 2px solid #fff;
     background: transparent;
-}
+}*/
 
-div.welcome li.avatar {
+/*div.welcome li.avatar {
     margin: 0 10px;
     background: url(../img/cat.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
+}*/
 
 div.calendar {
     position: relative;
     width: 300px;
     height: 415px;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 80px;
 
 }
 
@@ -582,10 +619,11 @@ div.calendar-search-container {
 }
 
 nav.header-calendar-search {
-	min-height: 150px;
+	min-height: 170px;
+	min-width: 1400px;
 	background: #fff;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     position: fixed;
     margin: 0 auto;	
@@ -611,6 +649,7 @@ nav.header-calendar-search div.create-meetup a:hover,
 nav.header-calendar-search div.archive a:hover {
     color: var(--color-1);
 }
+
 
 div.create-meetup {
     margin-left: 300px;
