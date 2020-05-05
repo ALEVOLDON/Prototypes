@@ -623,7 +623,6 @@ nav.header-calendar-search {
 	min-width: 1400px;
 	background: #fff;
     display: flex;
-    /*justify-content: space-between;*/
     align-items: center;
     position: fixed;
     margin: 0 auto;	
@@ -650,14 +649,21 @@ nav.header-calendar-search div.archive a:hover {
     color: var(--color-1);
 }
 
-
-div.create-meetup {
-    margin-left: 300px;
+div.create-meetup_archive-wripper {
+	display: flex;
+	justify-content: flex-end;
+	min-width: 480px;
+	margin-left: 300px;
+	align-items: center;
 }
 
+
+div.create-meetup,
 div.archive {
-    margin-left: 150px;
+    min-width: 240px;
+    text-align: right;
 }
+
 
 div.create-meetup,
 div.archive {
@@ -671,8 +677,15 @@ div.archive::before {
     width: 20px;
     height: 20px;
     background: var(--color-5);
-    left: -30px;
     top: 3px;
+}
+
+div.create-meetup::before {
+	left: 10px;
+}
+
+div.archive::before {
+	left: 105px;
 }
 
 div.calendar-search-wrapper {
