@@ -1,6 +1,17 @@
-@media only screen and (max-width: 1920px) {}
+@media only screen and (max-width: 1920px) {
+	section.adaptive {
+		display: none;
+	}
+}
 
 @media only screen and (max-width: 1440px) {
+	section.adaptive {
+		display: none;
+	}
+
+	nav.header-calendar-search div.welcome {
+    	margin-left: 80px;
+	}
 
     div.calendar-search-wrapper-right {
         right: 75px;
@@ -28,11 +39,36 @@
     	margin-top: 220px;
 	}
 
-
+	div.expexted,
+	a.expexted,
+	a.finished {
+	margin-left: 100px;
+	margin-bottom: 20px;
+	}
 }
 
 
-@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1280px) {
+	section.adaptive {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		text-align: center; 
+		background: var(--bg-color);
+		color: #fff;
+	}
+
+	section.adaptive p {
+		width: 80%;
+		border: 2px solid #fff;
+		padding: 1rem;
+	}
+
+	main {
+		display: none;
+	}
+}
 
 
 @media only screen and (max-width: 768px) {}

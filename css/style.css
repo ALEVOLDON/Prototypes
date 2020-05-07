@@ -7,9 +7,9 @@
 
     --bg-color: #C4C4C4;
 
-    --primary: #000000;
+    --primary: #000;
 
-    --secondary: #ffffffff;
+    --secondary: #fff;
 }
 
 html {
@@ -58,7 +58,6 @@ body {
 
     color: #fff;
 
-    /*overflow-x: hidden; */
 }
 
 a {
@@ -78,6 +77,14 @@ ul {
     list-style: none;
 }
 
+.bg-color {
+    background: var(--bg-color);
+}
+
+.color-bg {
+	color: var(--bg-color);
+}
+
 /*MAIN START */
 
 
@@ -93,10 +100,6 @@ nav.header {
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-}
-
-.bg-color {
-    background: var(--bg-color);
 }
 
 div.logo {
@@ -230,18 +233,6 @@ div.right-col {
     margin-left: 50px;
 }
 
-/*div.welcome {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 375px;
-    height: 206px;
-    background-image: url(../img/zeppelin.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}*/
-
 div.welcome {
 	position: relative;
 	display: flex;
@@ -251,7 +242,6 @@ div.welcome {
 	height: 120px;
 	background: var(--bg-color);
 	border-radius: 50%;
-	/*margin: 40px 100px;*/
 }
 
 div.welcome::before {
@@ -278,43 +268,9 @@ div.welcome::after {
 	right: -47px;
 }
 
-/*div.welcome-wrapper-visitor {
-    position: absolute;
-    left: 48px;
-    bottom: 93px;
-}*/
-
-/*div.welcome-wrapper-user {
-    position: absolute;
-    left: 15px;
-    bottom: 93px;
-}*/
-
 div.welcome a {
     text-transform: uppercase;
 }
-
-/*div.welcome ul.sign_up-log_in {
-    position: absolute;
-    display: flex;
-    top: 40px;
-    left: 10px;
-}*/
-
-/*div.welcome li.circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    background: transparent;
-}*/
-
-/*div.welcome li.avatar {
-    margin: 0 10px;
-    background: url(../img/cat.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}*/
 
 div.calendar {
     position: relative;
@@ -425,9 +381,9 @@ li.copyright {
     padding-top: 40px;
 }
 
-/*MAIN END*/
+/* ----- MAIN END ----- */
 
-/*Sign Up | Log In START*/
+/* ----- Sign Up | Log In START ----- */
 
 div.main-container {}
 
@@ -609,9 +565,9 @@ div.checkbox-circle p.wrapper span a {
     text-decoration: underline;
 }
 
-/*Sign Up | Log In END*/
+/* ----- Sign Up | Log In END -----*/
 
-/*Calendar | Search START*/
+/* ----- Calendar | Search START -----*/
 
 div.calendar-search-container {
     width: 1400px;
@@ -827,4 +783,39 @@ div.audience label {
     border-top: none;
 }
 
-/*Calendar | Search END*/
+/*-----Calendar | Search END-----*/
+
+/*-----User Page Start-----*/
+
+
+div.expexted,
+div.finished {
+	margin: 20px 0 20px 140px;
+}
+
+div.height-overflow-hidden {
+	height: 400px;
+	overflow: scroll;
+}
+
+table.table-meetup.scroll {
+	display: block;
+	margin-bottom: 20px;
+	min-width: 850px;
+	height: 210px;
+  	overflow-y: scroll;	
+}
+
+div.calendar-search-wrapper-left > table:nth-child(2) > tbody > tr:nth-child(1) > td.last.border,
+div.calendar-search-wrapper-left > table:nth-child(5) > tbody > tr:nth-child(1) > td.last.border {
+	min-width: 350px;
+}
+
+a.expexted,
+a.finished {
+	margin-left: 140px;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+/*-----User Page End-----*/
