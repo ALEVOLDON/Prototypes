@@ -818,4 +818,43 @@ a.finished {
 	font-weight: 500;
 }
 
+div.about-me-wrapper {
+    color: var(--bg-color);
+    margin-top: 10px;
+}
+
+div.about-me-wrapper span {
+    position: relative;
+}
+
+div.about-me-wrapper span::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: var(--bg-color);
+    left: -30px;
+    top: 4px;
+}
+
+div.inline-block {
+    display: flex;
+}
+
+div.about-me-wrapper dt {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+div.about-me-wrapper dd {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+div.about-me-wrapper dd.p-1 {
+    padding: 10px;
+}
+
 /*-----User Page End-----*/
