@@ -819,12 +819,22 @@ a.finished {
 }
 
 div.about-me-wrapper {
+    min-width: 240px;
+    min-height: 400px;
     color: var(--bg-color);
     margin-top: 10px;
 }
 
 div.about-me-wrapper span {
     position: relative;
+}
+
+div.about-me-wrapper span a {
+    color: var(--bg-color);
+}
+
+div.about-me-wrapper span a:hover {
+    color: var(--color-5);
 }
 
 div.about-me-wrapper span::before {
