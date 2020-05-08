@@ -440,31 +440,28 @@ form.welcome-with div.password input::placeholder {
     color: var(--bg-color);
 }
 
-form.welcome-with button.btn {
+form.welcome-with a.btn {
     position: relative;
-    min-width: 231px;
-    min-height: 64px;
     border: none;
     background: none;
     color: var(--bg-color);
     font-weight: bold;
     margin-top: 24px;
-    padding-right: 30px;
     cursor: pointer;
 }
 
-form.welcome-with button.btn:hover {
+form.welcome-with a.btn:hover {
     color: var(--color-5);
 }
 
-form.welcome-with button.btn::after {
+form.welcome-with a.btn::after {
     position: absolute;
     content: "";
     width: 20px;
     height: 20px;
     background: var(--color-5);
-    right: 70px;
-    top: 22px;
+    right: -30px;
+    top: 4px;
 }
 
 form.welcome-with p.or {
@@ -551,16 +548,22 @@ div.main-container a.copyright {
     right: 10px;
 }
 
-div.checkbox-circle {
+div.checkbox {
     text-align: center;
 }
 
+#main > div > form > div.checkbox > p:nth-child(1) > label > input[type=checkbox],
+#main > div > form > div.checkbox > p:nth-child(2) > label > input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
 
-div.checkbox-circle p.wrapper span {
+
+div.checkbox p.wrapper span {
     font-weight: normal;
 }
 
-div.checkbox-circle p.wrapper span a {
+div.checkbox p.wrapper span a {
     color: var(--bg-color);
     text-decoration: underline;
 }
@@ -783,6 +786,13 @@ div.audience label {
     border-top: none;
 }
 
+#main > div > div > div.calendar-search-wrapper-right > div.audience > label:nth-child(2) > input[type=checkbox],
+#main > div > div > div.calendar-search-wrapper-right > div.audience > label:nth-child(3) > input[type=checkbox],
+#main > div > div > div.calendar-search-wrapper-right > div.audience > label:nth-child(4) > input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
 /*-----Calendar | Search END-----*/
 
 /*-----User Page Start-----*/
@@ -834,7 +844,7 @@ div.about-me-wrapper span a {
 }
 
 div.about-me-wrapper span a:hover {
-    color: var(--color-5);
+    color: var(--color-1);
 }
 
 div.about-me-wrapper span::before {
