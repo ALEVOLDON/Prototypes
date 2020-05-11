@@ -34,7 +34,7 @@ var dt = new Date();
                 "November",
                 "December"
             ]
-            document.getElementById("month").innerHTML = months[dt.getMonth()];
+            // document.getElementById("month").innerHTML = months[dt.getMonth()];
             document.getElementById("date_str").innerHTML = dt.toDateString();
             var cells = "";
             for (x = day; x > 0; x--) {
