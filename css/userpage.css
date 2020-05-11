@@ -1,0 +1,83 @@
+/*-----User Page Start-----*/
+
+
+div.expexted,
+div.finished {
+    margin: 20px 0 20px 140px;
+}
+
+div.height-overflow-hidden {
+    height: 400px;
+    overflow: scroll;
+}
+
+table.table-meetup.scroll {
+    display: block;
+    margin-bottom: 20px;
+    min-width: 850px;
+    height: 210px;
+    overflow-y: scroll;
+}
+
+div.calendar-search-wrapper-left>table:nth-child(2)>tbody>tr:nth-child(1)>td.last.border,
+div.calendar-search-wrapper-left>table:nth-child(5)>tbody>tr:nth-child(1)>td.last.border {
+    min-width: 350px;
+}
+
+a.expexted,
+a.finished {
+    margin-left: 140px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+div.about-me-wrapper {
+    min-width: 240px;
+    min-height: 400px;
+    color: var(--bg-dark);
+    margin-top: 10px;
+}
+
+div.about-me-wrapper span {
+    position: relative;
+}
+
+div.about-me-wrapper span a {
+    color: var(--bg-dark);
+}
+
+div.about-me-wrapper span a:hover {
+    color: var(--color-1);
+}
+
+div.about-me-wrapper span::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: var(--bg-dark);
+    left: -30px;
+    top: 4px;
+}
+
+div.inline-block {
+    display: flex;
+}
+
+div.about-me-wrapper dt {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+div.about-me-wrapper dd {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+div.about-me-wrapper dd.p-1 {
+    padding: 10px;
+}
+
+/*-----User Page End-----*/

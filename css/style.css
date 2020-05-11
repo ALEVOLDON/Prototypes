@@ -1,3 +1,8 @@
+@import "main.css";
+@import "signuplogin.css";
+@import "calendar.css";
+@import "userpage.css";
+
 :root {
     --color-1: #f2f2f2;
     --color-2: #bfbfbf;
@@ -89,7 +94,7 @@ ul {
 /*MAIN START */
 
 
-div.container {
+/*div.container {
     display: flex;
     width: 1400px;
     margin: 0 auto;
@@ -380,13 +385,13 @@ ul.meetup li {
 li.copyright {
     font-weight: normal;
     padding-top: 40px;
-}
+}*/
 
 /* ----- MAIN END ----- */
 
 /* ----- Sign Up | Log In START ----- */
 
-div.main-container {}
+/*div.main-container {}
 
 div.calendar-link {
     margin-top: 25px;
@@ -567,13 +572,13 @@ div.checkbox p.wrapper span {
 div.checkbox p.wrapper span a {
     color: var(--bg-dark);
     text-decoration: underline;
-}
+}*/
 
 /* ----- Sign Up | Log In END -----*/
 
 /* ----- Calendar | Search START -----*/
 
-div.calendar-search-container {
+/*div.calendar-search-container {
     width: 1400px;
     margin: 0 auto;
 }
@@ -711,7 +716,7 @@ div.search-hashtag input {
 
 div.search-hashtag input::placeholder {
     color: #fff;
-}
+}*/
 
 /*div.data-toggle {
     position: relative;
@@ -759,21 +764,18 @@ div.table-calendar-cell td {
 }*/
 
 /*-----Calendar Start-----*/
-div.calendar-user {
+/*div.calendar-user {
     margin-top: 30px;
     width: 315px;
-    border-radius: 5px;
 }
 
 div.calendar-user > div.month {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 315px;
     padding: 0 10px;
     text-align: center;
     background-color: var(--bg-dark);
-    color: #fff;
 }
 
 h2#month {
@@ -835,11 +837,11 @@ div.calendar-user > div.days {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     font-size: 23px;
-    /*background-color: rgba(0, 0, 0, 0.1);*/
+    background-color: rgba(0, 0, 0, 0.1);
     transition: all 0.4s;
 }
 
@@ -852,11 +854,11 @@ div.calendar-user > div.days {
 #month {
     font-size: 30px;
     font-weight: 500;
-}
+}*/
 
 /*-----Calendar End-----*/
 
-div.audience {
+/*div.audience {
     display: flex;
     flex-direction: column;
     min-width: 315px;
@@ -890,14 +892,14 @@ div.audience label {
 #main>div>div>div.calendar-search-wrapper-right>div.audience>label:nth-child(4)>input[type=checkbox] {
     width: 20px;
     height: 20px;
-}
+}*/
 
 /*-----Calendar | Search END-----*/
 
 /*-----User Page Start-----*/
 
 
-div.expexted,
+/*div.expexted,
 div.finished {
     margin: 20px 0 20px 140px;
 }
@@ -974,6 +976,6 @@ div.about-me-wrapper dd {
 
 div.about-me-wrapper dd.p-1 {
     padding: 10px;
-}
+}*/
 
 /*-----User Page End-----*/

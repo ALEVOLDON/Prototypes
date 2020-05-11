@@ -1,0 +1,274 @@
+/* ----- Calendar | Search START -----*/
+
+div.calendar-search-container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+nav.header-calendar-search {
+    min-height: 170px;
+    min-width: 1400px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 5;
+}
+
+nav.header-calendar-search div.welcome {
+    margin-left: 100px;
+}
+
+nav.header-calendar-search div.logo {
+    margin: 0;
+    margin-left: 50px;
+}
+
+nav.header-calendar-search div.create-meetup a,
+nav.header-calendar-search div.archive a {
+    color: var(--bg-dark);
+}
+
+nav.header-calendar-search div.create-meetup a:hover,
+nav.header-calendar-search div.archive a:hover {
+    color: var(--color-1);
+}
+
+div.create-meetup_archive-wripper {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 480px;
+    margin-left: 300px;
+    align-items: center;
+}
+
+
+div.create-meetup,
+div.archive {
+    min-width: 240px;
+    text-align: right;
+}
+
+
+div.create-meetup,
+div.archive {
+    position: relative;
+}
+
+div.create-meetup::before,
+div.archive::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: var(--color-5);
+    top: 3px;
+}
+
+div.create-meetup::before {
+    left: 10px;
+}
+
+div.archive::before {
+    left: 105px;
+}
+
+div.calendar-search-wrapper {
+    display: flex;
+}
+
+div.calendar-search-wrapper-left {
+    margin-top: 250px;
+    min-height: 800px;
+}
+
+table.table-meetup {
+    min-width: 850px;
+    color: var(--bg-dark);
+    font-weight: normal;
+    margin-left: 140px;
+    border-collapse: collapse;
+}
+
+table.table-meetup tr td.cell {
+    width: 150px;
+}
+
+table.table-meetup tr td.last {
+    text-align: right;
+    padding-right: 50px;
+}
+
+table.table-meetup td.pb-10 {
+    padding-bottom: 10px;
+}
+
+table.table-meetup a {
+    color: var(--bg-dark);
+}
+
+table.table-meetup a:hover {
+    color: var(--color-1);
+}
+
+table.table-meetup span {
+    cursor: pointer;
+}
+
+table.table-meetup td.border,
+table.table-meetup tr.border {
+    border-bottom: 1px solid var(--bg-dark);
+}
+
+div.calendar-search-wrapper-right {
+    position: fixed;
+    right: 300px;
+    margin-top: 200px;
+}
+
+div.search-hashtag input {
+    min-width: 315px;
+    min-height: 64px;
+    border: none;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+div.search-hashtag input::placeholder {
+    color: #fff;
+}
+
+/*-----Calendar Start-----*/
+div.calendar-user {
+    margin-top: 30px;
+    width: 315px;
+}
+
+div.calendar-user > div.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+
+h2#month {
+    font-size: 20px;
+}
+
+p#date_str {
+    font-weight: normal;
+}
+
+div.calendar-user > div.weekdays {
+    background-color: var(--bg-light);
+    color: #000;
+    font-size: 16px;
+    padding: 10px 0;
+    display: flex;
+    border-left: 2px solid var(--bg-dark);
+    border-right: 2px solid var(--bg-dark); 
+}
+
+div.calendar-user > div.days {
+    min-height: 200px;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--bg-light);
+    border: 2px solid var(--bg-dark);
+    border-top: none;
+}
+
+
+.weekdays div,
+.days div {
+    text-align: center;
+    width: 14.28%;
+}
+
+.days div {
+    transition: all 0.4s;
+}
+
+.prev_date {
+    color: var(--color-5);
+}
+
+.today {
+    background-color: blue;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.days div:hover {
+    cursor: pointer;
+    background-color: var(--bg-dark);
+}
+
+.prev,
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 23px;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    transition: all 0.4s;
+}
+
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#month {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/*-----Calendar End-----*/
+
+div.audience {
+    display: flex;
+    flex-direction: column;
+    min-width: 315px;
+    min-height: 150px;
+    color: var(--bg-dark);
+    font-weight: normal;
+}
+
+div.audience span {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    min-width: 315px;
+    min-height: 64px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: var(--bg-dark);
+    color: #fff;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+div.audience label {
+    border: 2px solid var(--bg-dark);
+    padding: 10px;
+    border-top: none;
+}
+
+#main>div>div>div.calendar-search-wrapper-right>div.audience>label:nth-child(2)>input[type=checkbox],
+#main>div>div>div.calendar-search-wrapper-right>div.audience>label:nth-child(3)>input[type=checkbox],
+#main>div>div>div.calendar-search-wrapper-right>div.audience>label:nth-child(4)>input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+/*-----Calendar | Search END-----*/
