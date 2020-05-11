@@ -790,18 +790,17 @@ div.calendar-user > div.weekdays {
     font-size: 16px;
     padding: 10px 0;
     display: flex;
-    border-left: 9px solid var(--bg-dark);
-    border-right: 9px solid var(--bg-dark); 
+    border-left: 2px solid var(--bg-dark);
+    border-right: 2px solid var(--bg-dark); 
 }
 
 div.calendar-user > div.days {
-    min-width: 297px;
-    min-height: 202px;
+    min-height: 200px;
     font-weight: 300;
     display: flex;
     flex-wrap: wrap;
     background: var(--bg-light);
-    border: 9px solid var(--bg-dark);
+    border: 2px solid var(--bg-dark);
     border-top: none;
 }
 
@@ -823,7 +822,7 @@ div.calendar-user > div.days {
 .today {
     background-color: blue;
     color: #fff;
-    border: 4px solid #fff;
+    border: 2px solid #fff;
 }
 
 .days div:hover {
