@@ -193,7 +193,10 @@
 
     #main > div > nav > div.welcome {
     	width: 300px;
+    	margin-left: 95px;
     }
+
+
 
     #main>div>nav>div.welcome>div {
         font-size: 20px;
