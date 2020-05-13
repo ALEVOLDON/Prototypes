@@ -61,7 +61,7 @@ div.search input::placeholder {
 }
 
 div.wrapper {
-    margin-top: 132px;
+    margin-top: 60px;
     margin-bottom: 35px;
     display: flex;
     flex-direction: row;
