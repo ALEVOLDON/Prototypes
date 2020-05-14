@@ -27,16 +27,19 @@ nav.header-calendar-search div.logo {
 }
 
 nav.header-calendar-search div.create-meetup a,
-nav.header-calendar-search div.archive a {
+nav.header-calendar-search div.archive a,
+nav.header-calendar-search div.calendar-link-search > a {
     color: var(--bg-dark);
 }
 
 nav.header-calendar-search div.create-meetup a:hover,
-nav.header-calendar-search div.archive a:hover {
+nav.header-calendar-search div.archive a:hover,
+nav.header-calendar-search div.calendar-link-search a:hover {
     color: var(--color-1);
 }
 
-div.create-meetup_archive-wripper {
+div.create-meetup_archive-wripper,
+div.create-meetup_calendar-wripper {
     display: flex;
     justify-content: flex-end;
     min-width: 480px;
@@ -44,21 +47,23 @@ div.create-meetup_archive-wripper {
     align-items: center;
 }
 
-
 div.create-meetup,
-div.archive {
+div.archive,
+div.calendar-link-search {
     min-width: 240px;
     text-align: right;
 }
 
 
 div.create-meetup,
-div.archive {
+div.archive,
+div.calendar-link-search {
     position: relative;
 }
 
 div.create-meetup::before,
-div.archive::before {
+div.archive::before,
+div.calendar-link-search::before {
     position: absolute;
     content: "";
     width: 20px;
@@ -73,6 +78,10 @@ div.create-meetup::before {
 
 div.archive::before {
     left: 105px;
+}
+
+div.calendar-link-search::before {
+    left: 80px;
 }
 
 div.calendar-search-wrapper {

@@ -9,6 +9,7 @@
         display: none;
     }
 
+	/*Calendar Search Start*/
 
     nav.header-calendar-search div.welcome {
         margin-left: 80px;
@@ -18,14 +19,6 @@
         right: 75px;
         margin-left: 50px;
 
-    }
-
-    div.create-meetup {
-        margin-left: 300px;
-    }
-
-    div.create-meetup_archive-wripper {
-        margin-left: 0;
     }
 
     div.calendar-search-wrapper-left {
@@ -46,9 +39,14 @@
         margin-left: 100px;
         margin-bottom: 20px;
     }
+
+    /*Calendar Search End*/
 }
 
 @media only screen and (max-height: 900px) {
+
+	/*Main Start*/
+
     div.wrapper {
         margin-top: 20px;
     }
@@ -86,6 +84,8 @@
         margin-top: 55px;
         height: 202px;
     }
+
+    /*Main End*/
 }
 
 
@@ -178,9 +178,11 @@
         position: static;
     }
 
-    #main>div>nav>div.create-meetup_archive-wripper>div.create-meetup {
-        margin-left: 150px;
-    }
+    div.create-meetup_archive-wripper,
+	div.create-meetup_calendar-wripper {
+    margin-left: 125px;
+    
+}
 
     #main>div>div>div.calendar-search-wrapper-left,
     #main>div>div>div.calendar-search-wrapper-right {
@@ -193,7 +195,6 @@
 
     #main > div > nav > div.welcome {
     	width: 300px;
-    	margin-left: 95px;
     }
 
 
@@ -226,10 +227,6 @@
     div.calendar-search-wrapper-left>table:nth-child(2)>tbody>tr:nth-child(1)>td.last.border,
     div.calendar-search-wrapper-left>table:nth-child(5)>tbody>tr:nth-child(1)>td.last.border {
         min-width: 200px;
-    }
-
-    #main > div > div > div.calendar-search-wrapper-right {
-    	margin-left: 100px;
     }
 
     /*-----User Page End-----*/
