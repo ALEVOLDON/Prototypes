@@ -1,6 +1,8 @@
 /* ----- Sign Up | Log In START ----- */
 
-div.main-container {}
+div.main-container {
+    position: relative; 
+}
 
 div.calendar-link {
     margin-top: 25px;
@@ -148,11 +150,6 @@ form.welcome-with p.service a {
 
 form.welcome-with p.service a:hover {
     color: var(--color-5);
-}
-
-div.main-container {
-    position: relative;
-    height: 100vh;
 }
 
 div.main-container a.copyright {
