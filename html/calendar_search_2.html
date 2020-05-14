@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../css/media.css">
 </head>
 
-<body>
+<body onload="renderDate()">
     <section class="adaptive">
         <p>This site is under development, it is supported only by devices with a screen resolution of 1920x1080 and 1440x1024.</p>
     </section>
@@ -128,59 +128,30 @@
                             <input class="bg-color" type="search" id="search" name="search" placeholder="#HASHTAG">
                         </form>
                     </div>
-                    <div class="data-toggle">
-                        <span><time datetime="DATA"></time>DATA</span>
-                    </div>
-                    <div class="table-calendar-cell">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="calendar-user">
+                        <div class="month">
+                            <div class="prev" onclick="moveDate('prev')">
+                                <span>&#10094;</span>
+                            </div>
+                            <div>
+                                <!-- <h2 id="month"></h2> -->
+                                <p id="date_str"></p>
+                            </div>
+                            <div class="next" onclick="moveDate('next')">
+                                <span>&#10095;</span>
+                            </div>
+                        </div>
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="days">
+                        </div>
                     </div>
                     <div class="audience">
                         <span>AUDIENCE</span>
@@ -200,7 +171,7 @@
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- main js -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <!-- livereload -->
     <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
